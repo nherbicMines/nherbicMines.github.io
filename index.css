@@ -27,10 +27,11 @@ body {
   text-align: left;
   padding-left: 100px;
   padding-top: 50px;
-  font-size: 2.5em;
+  font-size: 2.0rem;
   color: white;
   width: 40%;
   float: left;
+  
 }
 
 .intro-small {
@@ -42,9 +43,9 @@ body {
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 50px;
-  font-size: 2.0em;
+  font-size: 1.5rem;
   color: white;
-  margin-left: 40%;
+  margin-left: 50%;
 }
 
 .image {
@@ -84,20 +85,22 @@ body {
 
 .nav-name {
  
-  font-size: 1.75em;
-  width: 60%;
+  font-size: 2.25rem;
+  width: 50%;
   color: white;
   border-bottom-width: 5;
   border-bottom-color: #71208a;
   float: left;
   text-align: left;
   padding-left: 50px;
+  margin: auto;
 }
 
 .nav-items {
 
-  font-size: 1.75em;
-  margin-left: 60%;
+  font-size: 2.25rem;
+  margin-left: 45%;
+  width: 50%;
   border-bottom-width: 5;
   border-bottom-color: #71208a;
   text-align: right;
