@@ -19,31 +19,22 @@ body {
   color: white;
 }
 
+.intro-container {
+  padding: 0 20px; /* Adjust padding as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .intro {
-  min-height: 25vh;
-  align-items: left;
-  display: inline-block;
-  justify-content: left;
-  text-align: left;
-  padding-left: 100px;
-  padding-top: 50px;
   font-size: 2.0rem;
   color: white;
-  width: 40%;
-  float: left;
 }
 
 .intro-small {
-  min-height: 25vh;
-  align-items: left;
-  justify-content: left;
-  text-align: left;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 50px;
   font-size: 1.5rem;
   color: white;
-  margin-left: 50%;
 }
 
 .image {
@@ -158,4 +149,93 @@ hr {
   width: 85%;
   height: 85%;
   margin-top: 50px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  .nav-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav-items {
+    text-align: center;
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .nav-name {
+    margin-bottom: 20px;
+  }
+
+  .dropdown {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .dropdown-content {
+    position: static;
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 8px;
+  }
+
+  .container,
+  .description {
+    width: 90%;
+    margin: 0 auto;
+    overflow-wrap: break-word; /* Allow text to wrap */
+  }
+
+  .intro-small {
+    padding: 0;
+    padding-right: 10px;
+    width: 100%; /* Expand intro-small to full width */
+    box-sizing: border-box; /* Ensure padding doesn't increase width */
+  }
+
+  .intro-container {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 601px) {
+  .container,
+  .description {
+    width: 40%;
+    float: left;
+  }
+
+  .description {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .intro,
+  .intro-small {
+    width: 50%;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }

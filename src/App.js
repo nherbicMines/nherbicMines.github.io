@@ -47,18 +47,20 @@ function App() {
 function Home() {
   return (
     <div>
-      <div className="intro">
-        Hello, World.<br /><br />My name is Nick. Thanks for visiting.
-      </div>
-      <div className="intro-small">
-        I am currently a graduate with a Bachelor's in Computer Science from the <span style={{ color: '#1930a6', fontWeight: 'bold' }}>Colorado School of Mines</span>. And I'm currently looking for a job.
-        This website serves as an addition to to my resume, although my official resume is listed in the "About" section.
-      </div>
-      <br /><hr /><br />
-      <div className="h1">
-        Here are some projects I've worked on:
+      <div className="intro-container">
+        <div className="intro">
+          Hello, World.<br /><br />My name is Nick. Thanks for visiting. <br /> <br />
+        </div>
+        <div className="intro-small">
+          I am currently a graduate with a Bachelor's in Computer Science from the <span style={{ color: '#1930a6', fontWeight: 'bold' }}>Colorado School of Mines</span>. And I'm currently looking for a job.
+          This website serves as an addition to to my resume, although my official resume is listed in the "About" section.
+        </div>
+        <br /><hr /><br />
       </div>
 
+        <div className="h1">
+          Here are some projects I've worked on:
+        </div>
       <div className="container">
         <a href="https://github.com/nherbicMines/Tower-Defense-Engineered" target='_blank'><img src={tdeGame} className="image" alt="Tower Defense: Engineered" /></a>
         <a href="https://github.com/nherbicMines/Tower-Defense-Engineered" target='_blank'>Tower Defense: Engineered</a>
