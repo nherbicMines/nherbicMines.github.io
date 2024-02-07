@@ -51,7 +51,7 @@ function Home() {
         Hello, World.<br /><br />My name is Nick. Thanks for visiting.
       </div>
       <div className="intro-small">
-        I am currently a student acquiring my Bachelor's Degree in Computer Science at <span style={{ color: '#1930a6', fontWeight: 'bold' }}>Colorado School of Mines</span>. And I'm currently looking for a job.
+        I am currently a graduate with a Bachelor's in Computer Science from the <span style={{ color: '#1930a6', fontWeight: 'bold' }}>Colorado School of Mines</span>. And I'm currently looking for a job.
         This website serves as an addition to to my resume, although my official resume is listed in the "About" section.
       </div>
       <br /><hr /><br />
