@@ -131,6 +131,38 @@ body {
   display: block;
 }
 
+.about-details {
+  display: flex;
+  align-items: center; /* Align items vertically to the center */
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allow the left section to grow to fill available space */
+  align-items: center;
+}
+
+.about-details .intro {
+  font-size: 2.0rem;
+  color: white;
+}
+
+.about-details .intro-text {
+  font-size: 2.0rem; /* Adjust font size as needed */
+  color: white;
+  padding-bottom: 20px; /* Add padding to reduce whitespace */
+}
+
+.about-details .image {
+  border-radius: 8px;
+  padding: 15px;
+  width: 50%; /* Adjust image width as needed */
+  height: auto; /* Maintain aspect ratio */
+  background-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .p {
   font-size: 0.875em;
 }
@@ -146,9 +178,11 @@ hr {
 }
 
 #me {
-  width: 85%;
-  height: 85%;
+  max-width: 100%; /* Adjust the maximum width as needed */
+  width: 80%; /* Ensure the image fills its container */
   margin-top: 50px;
+  display: block; /* Ensure the image aligns correctly with text */
+  margin-bottom: 20px; /* Add space below the image */
 }
 
 /* Mobile Styles */
@@ -160,21 +194,29 @@ hr {
   .nav-container {
     flex-direction: column;
     padding: 10px;
+    align-items: center; /* Center items vertically */
   }
 
   .nav-items {
     text-align: center;
     padding: 0;
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+  }
+
+  .nav-items > a {
+    margin: 0 10px; /* Adjust spacing between items */
   }
 
   .nav-name {
-    margin-bottom: 20px;
+    line-height: 1rem; /* Adjust as needed */
   }
 
   .dropdown {
     display: block;
-    margin-top: 20px;
+    margin: 0 10px;
     text-align: center;
   }
 
@@ -200,6 +242,25 @@ hr {
     width: 90%;
     margin: 0 auto;
     overflow-wrap: break-word; /* Allow text to wrap */
+  }
+
+  .about-details {
+    flex-direction: column; /* Stack elements vertically on mobile */
+    align-items: flex-start; /* Align items to the start (left) on mobile */
+  }
+
+  .about-details .intro {
+    margin-right: 0; /* Reset margin for mobile */
+  }
+
+  .left-section {
+    width: 100%; /* Ensure full width on mobile */
+  }
+
+  .about-details .image {
+    width: 100%; /* Full width on mobile */
+    height: 75%;
+    margin-bottom: 20px; /* Add space between image and text on mobile */
   }
 
   .intro-small {

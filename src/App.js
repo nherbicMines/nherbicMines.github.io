@@ -15,22 +15,22 @@ function App() {
   return (
     <Router>
       <div>
-      <nav className="nav-container">
-  <div className="nav-name">
-    Nick Herbic
-  </div>
-  <div className="nav-items">
-    <Link to="/">Home</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <Link to="/about">About</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <div className="dropdown">
-      <Link to="/in-site-apps">In-site Apps</Link>
-      <div className="dropdown-content">
-        <Link to="/giant-foundry">Optimal Giants' Foundry</Link>
-        <Link to="/bis-by-level">Best In Slot by Level</Link>
-      </div>
-    </div>
-  </div>
-</nav>
+        <nav className="nav-container">
+          <div className="nav-name">
+            Nick Herbic
+          </div>
+          <div className="nav-items">
+            <Link to="/">Home</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <Link to="/about">About</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div className="dropdown">
+              <Link to="/in-site-apps">In-site Apps</Link>
+              <div className="dropdown-content">
+                <Link to="/giant-foundry">Optimal Giants' Foundry</Link>
+                <Link to="/bis-by-level">Best In Slot by Level</Link>
+              </div>
+            </div>
+          </div>
+        </nav>
 
         <Routes>
           <Route path="/" element={<Home />} />
