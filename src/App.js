@@ -21,23 +21,23 @@ function App() {
           </div>
           <div className="nav-items">
             <Link to="/">Home</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <Link to="/about">About</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <div className="dropdown">
+            <Link to="/about">About</Link>{/*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/}
+            {/*<div className="dropdown">
               <Link to="/in-site-apps">In-site Apps</Link>
               <div className="dropdown-content">
                 <Link to="/giant-foundry">Optimal Giants' Foundry</Link>
                 <Link to="/bis-by-level">Best In Slot by Level</Link>
               </div>
-            </div>
+            </div>*/}
           </div>
         </nav>
 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/in-site-apps" element={<InSiteApps />} />
+          {/*<Route path="/in-site-apps" element={<InSiteApps />} />
           <Route path="/giant-foundry" element={<GiantFoundry />} />
-          <Route path="/bis-by-level" element={<BISByLevel />} />
+          <Route path="/bis-by-level" element={<BISByLevel />} /> */}
         </Routes>
       </div>
     </Router>
@@ -52,7 +52,7 @@ function Home() {
           Hello, World.<br /><br />My name is Nick. Thanks for visiting. <br /> <br />
         </div>
         <div className="intro-small">
-          I am currently a graduate with a Bachelor's in Computer Science from the <span style={{ color: '#1930a6', fontWeight: 'bold' }}>Colorado School of Mines</span>. And I'm currently looking for a job.
+          I am currently a graduate with a Bachelor's in Computer Science from the <span style={{ color: '#CFDCE9', fontWeight: 'bold' }}>Colorado School of Mines</span>. And I'm currently looking for a job.
           This website serves as an addition to to my resume, although my official resume is listed in the "About" section.
         </div>
         <br /><hr /><br />

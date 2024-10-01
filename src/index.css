@@ -5,8 +5,8 @@ body {
   font-size: 100%;
   min-height: 300vh;
   font-family: 'Saira Condensed', sans-serif;
-  color: #61dafb;
-  background-color: #041f21;
+  color: #AFDDE5; /* Changed text color */
+  background-color: #003135; /* Changed background color */
 }
 
 .h1 {
@@ -16,7 +16,7 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 2.5em;
-  color: white;
+  color: #AFDDE5; /* Changed heading color */
 }
 
 .intro-container {
@@ -29,12 +29,12 @@ body {
 
 .intro {
   font-size: 2.0rem;
-  color: white;
+  color: #AFDDE5; /* Changed intro text color */
 }
 
 .intro-small {
   font-size: 1.5rem;
-  color: white;
+  color: #AFDDE5; /* Changed smaller intro text color */
 }
 
 .image {
@@ -43,12 +43,12 @@ body {
   width: 100%;
   height: 100%;
   display: table-column;
-  background-color: black;
+  background-color: #024950; /* Changed image background color */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .image:hover {
-  opacity: 0.5;
+  opacity: 0.5; /* Kept the same hover effect */
 }
 
 .container {
@@ -59,6 +59,11 @@ body {
   height: 50%;
   padding-left: 25px;
   padding-right: 25px;
+  color: #AFDDE5; /* Changed container text color */
+}
+
+.container > a {
+  color: #0FA4AF;
 }
 
 .description {
@@ -70,15 +75,20 @@ body {
   width: 40%;
   padding-left: 25px;
   padding-right: 25px;
+  color: #AFDDE5; /* Changed description text color */
+}
+
+.description > a {
+  color: #0FA4AF
 }
 
 .nav-items > a {
   text-decoration: none;
-  color: #61dafb;
+  color: #AFDDE5; /* Changed navigation link color */
 }
 
 .nav-container {
-  border-bottom: 5px solid blue;
+  border-bottom: 5px solid #0FA4AF; /* Changed nav border color */
   overflow: visible;
   display: flex;
   align-items: center;
@@ -94,7 +104,7 @@ body {
 
 .nav-name {
   font-size: 2.25rem;
-  color: white;
+  color: #AFDDE5; /* Changed nav name color */
   line-height: 3rem; /* Adjust as needed */
 }
 
@@ -104,19 +114,19 @@ body {
 }
 
 .dropdown a {
-  color: #61dafb;
+  color: #AFDDE5; /* Changed dropdown link color */
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #ffffff; /* Light background for dropdown */
   min-width: 200px;
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
+  color: #003135; /* Changed dropdown text color */
   padding: 8px 12px;
   text-decoration: none;
   display: block;
@@ -124,7 +134,7 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #f1f1f1; /* Light gray on hover */
 }
 
 .dropdown:hover .dropdown-content {
@@ -145,30 +155,32 @@ body {
 
 .about-details .intro {
   font-size: 2.0rem;
-  color: white;
+  color: #AFDDE5; /* Changed intro color in about section */
 }
 
 .about-details .intro-text {
   font-size: 2.0rem; /* Adjust font size as needed */
-  color: white;
-  padding-bottom: 20px; /* Add padding to reduce whitespace */
+  color: #AFDDE5; /* Changed intro text color */
+  padding-bottom: 20px; /* Retaining original padding */
 }
 
 .about-details .image {
   border-radius: 8px;
   padding: 15px;
-  width: 50%; /* Adjust image width as needed */
+  width: 50%; /* Retaining original image width */
   height: auto; /* Maintain aspect ratio */
-  background-color: black;
+  background-color: #024950; /* Match image background color */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .p {
   font-size: 0.875em;
+  color: #AFDDE5; /* Changed paragraph text color */
 }
 
 hr {
   width: 80%;
+  border: 1px solid #0FA4AF; /* Changed horizontal rule color */
 }
 
 #eval {
@@ -223,7 +235,7 @@ hr {
   .dropdown-content {
     position: static;
     display: none;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Light gray for dropdown */
     min-width: 160px;
     z-index: 1;
   }
